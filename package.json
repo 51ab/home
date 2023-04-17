@@ -1,0 +1,14 @@
+{
+  "name": "our_home",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
