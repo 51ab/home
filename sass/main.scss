@@ -1,9 +1,17 @@
 @import "base";
 @import "feature";
 @import "footer";
-@import "base";
+@import "typo";
 @import "sidebar";
 @import "header";
+@import "gallery";
+@import "homes";
+@import "story";
+@import "realtor";
  *{
     background-color: crimson;
+
+ }
+ html{
+   font-size: 62.5%;
  }
