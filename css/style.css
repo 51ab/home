@@ -1,2 +1,37 @@
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: repeat(8, 1fr); }
+
+.features {
+  background-color: darkblue; }
+
+.footer {
+  background-color: aqua; }
+
+.sidebar {
+  background-color: cadetblue; }
+
+.header {
+  background-color: chocolate; }
+
+.gallery {
+  background-color: darkmagenta; }
+
+.homes {
+  background-color: forestgreen; }
+
+.story_pictures {
+  background-color: deeppink; }
+
+.story_content {
+  background-color: darkseagreen; }
+
+.realtors {
+  background-color: coral; }
+
 * {
   background-color: crimson; }
+
+html {
+  font-size: 62.5%; }
