@@ -1,6 +1,8 @@
 .story_pictures{
     background-color: deeppink;
+    grid-column: full-start / col-end 4;
 }
 .story_content{
     background-color: darkseagreen;
+    grid-column: col-end 5/ full-end;
 }

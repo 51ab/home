@@ -1,37 +1,51 @@
 .container {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  grid-template-columns: repeat(8, 1fr); }
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .features {
-  background-color: darkblue; }
+  background-color: darkblue;
+  grid-column: center-start / center-end;
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem; }
 
 .footer {
-  background-color: aqua; }
+  background-color: aqua;
+  grid-column: full-start / full-end; }
 
 .sidebar {
-  background-color: cadetblue; }
+  background-color: cadetblue;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1; }
 
 .header {
-  background-color: chocolate; }
+  background-color: chocolate;
+  grid-column: full-start / col-end 6; }
 
 .gallery {
-  background-color: darkmagenta; }
+  background-color: darkmagenta;
+  grid-column: full-start / full-end; }
 
 .homes {
-  background-color: forestgreen; }
+  background-color: forestgreen;
+  grid-column: center-start / center-end; }
 
 .story_pictures {
-  background-color: deeppink; }
+  background-color: deeppink;
+  grid-column: full-start / col-end 4; }
 
 .story_content {
-  background-color: darkseagreen; }
+  background-color: darkseagreen;
+  grid-column: col-end 5/ full-end; }
 
 .realtors {
-  background-color: coral; }
+  background-color: coral;
+  grid-column: col-start 7 / full-end; }
 
 * {
   background-color: crimson; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 92.5%; }
