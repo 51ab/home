@@ -4,12 +4,22 @@
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .features {
-  background-color: darkblue;
+  background-color: white;
   grid-column: center-start / center-end;
   margin: 15rem 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 6rem; }
+
+.feature h4 {
+  font-weight: 600;
+  font-size: 1.5rem; }
+
+.feature_icon {
+  width: 30%;
+  fill: #eab940; }
+  .feature_icon use {
+    font-size: 4rem; }
 
 .footer {
   background-color: aqua;
@@ -45,7 +55,7 @@
   grid-column: col-start 7 / full-end; }
 
 * {
-  background-color: crimson; }
+  background-color: white; }
 
 html {
   font-size: 92.5%; }

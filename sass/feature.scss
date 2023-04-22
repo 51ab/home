@@ -1,8 +1,21 @@
 .features{
-    background-color: darkblue;
+    background-color: white;
     grid-column: center-start / center-end;
     margin: 15rem 0;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 6rem;
+}
+.feature{
+    h4{
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    &_icon{
+        width: 30%;
+        fill:rgb(234, 185, 64);
+        use{
+            font-size: 4rem;
+        }
+    }
 }
