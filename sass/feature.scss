@@ -3,19 +3,30 @@
     grid-column: center-start / center-end;
     margin: 15rem 0;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 6rem;
+    //grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    grid-gap: 3rem;
 }
 .feature{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    //grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
     h4{
         font-weight: 600;
         font-size: 1.5rem;
     }
     &_icon{
-        width: 30%;
+        width: 4rem;
         fill:rgb(234, 185, 64);
-        use{
-            font-size: 4rem;
-        }
+        grid-row: 1 / span 2;
+        
+        //margin-top: 2.5rem;
+        
+        
+    }
+    p{
+        font-size: 1.2rem;
+        margin-top: -1rem;
     }
 }
