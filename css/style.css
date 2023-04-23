@@ -48,23 +48,59 @@
   grid-column: center-start / center-end; }
 
 .story_pictures {
-  background-color: deeppink;
-  grid-column: full-start / col-end 4; }
+  background-color: darkseagreen;
+  grid-column: full-start / col-end 4;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr); }
+  .story_pictures .story_img_1 {
+    width: 100%;
+    grid-column: 2 / 6;
+    grid-row: 2 / 6;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
+  .story_pictures .story_img_2 {
+    width: 110%;
+    grid-column: 4 / 8;
+    grid-row: 5 /6;
+    z-index: 99;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
 
 .story_content {
-  background-color: darkseagreen;
+  background-color: white;
   grid-column: col-end 4 / full-end;
-  padding: 4rem 10rem; }
+  padding: 5rem 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; }
   .story_content h3 {
     background-color: inherit;
+    color: darkseagreen;
     font-size: 1.6rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: -2%; }
   .story_content h2 {
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-style: italic;
     background-color: inherit; }
   .story_content p {
-    background-color: inherit; }
+    background-color: inherit;
+    font-size: 1.2rem;
+    margin-top: -5%;
+    margin-bottom: 5%; }
+  .story_content .btn {
+    background-color: darkseagreen;
+    color: white;
+    border: none;
+    border-radius: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all .5s; }
+    .story_content .btn:hover {
+      background-color: #5c975c; }
 
 .realtors {
   background-color: coral;
