@@ -53,7 +53,18 @@
 
 .story_content {
   background-color: darkseagreen;
-  grid-column: col-end 5/ full-end; }
+  grid-column: col-end 4 / full-end;
+  padding: 4rem 10rem; }
+  .story_content h3 {
+    background-color: inherit;
+    font-size: 1.6rem;
+    text-transform: uppercase; }
+  .story_content h2 {
+    font-size: 4rem;
+    font-style: italic;
+    background-color: inherit; }
+  .story_content p {
+    background-color: inherit; }
 
 .realtors {
   background-color: coral;

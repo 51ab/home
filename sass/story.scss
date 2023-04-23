@@ -4,5 +4,25 @@
 }
 .story_content{
     background-color: darkseagreen;
-    grid-column: col-end 5/ full-end;
+    grid-column: col-end 4 / full-end;
+    padding: 4rem 10rem;
+    //line-height: 1;
+    h3{
+        background-color: inherit;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        //line-height: 1;
+    }
+    h2{
+        font-size: 4rem;
+        font-style: italic;
+        background-color: inherit;
+       // line-height: 1;
+    }
+    p{
+        background-color: inherit;
+    }
+    .btn{
+        //background-color: inherit;
+    }
 }
