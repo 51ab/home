@@ -44,8 +44,24 @@
   grid-column: full-start / full-end; }
 
 .homes {
-  background-color: forestgreen;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  display: grid;
+  margin: 10rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem;
+  align-items: flex-start; }
+  .homes .home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start; }
+    .homes .home img {
+      width: 70%;
+      grid-column: 1 / -1; }
+    .homes .home svg {
+      fill: #deb54d;
+      height: 2rem; }
+  .homes .cta {
+    grid-column: 1 / -1; }
 
 .story_pictures {
   background-color: darkseagreen;

@@ -1,4 +1,33 @@
 .homes{
-    background-color: forestgreen;
+    //background-color: forestgreen;
     grid-column: center-start / center-end;
+    display: grid;
+    margin: 10rem 0;
+    grid-template-columns: repeat(auto-fit , minmax(25rem,1fr));
+    grid-gap:7rem;
+    align-items: flex-start;
+    .home{
+       // background-color: bisque;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: flex-start;
+       
+    img{
+            width: 70%;
+            //height: 5rem;
+            grid-column: 1 / -1;
+        }
+        &_link{
+
+        }
+        svg{
+            fill:rgb(222, 181, 77);
+            height: 2rem;
+
+        }
+       
+    }
+    .cta{
+        grid-column: 1 / -1;
+    }
 }
