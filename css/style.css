@@ -44,24 +44,67 @@
   grid-column: full-start / full-end; }
 
 .homes {
+  margin-top: 15rem;
   grid-column: center-start / center-end;
   display: grid;
-  margin: 10rem 0;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 7rem;
+  grid-row-gap: 7rem;
+  grid-column-gap: 7rem;
   align-items: flex-start; }
   .homes .home {
+    background-color: bisque;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: flex-start; }
     .homes .home img {
-      width: 70%;
-      grid-column: 1 / -1; }
+      width: 100%;
+      grid-column: 1 /-1;
+      grid-row: 1/2;
+      z-index: 1; }
+    .homes .home h5 {
+      font-size: 1.5rem;
+      grid-row: 1/2;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      grid-column: 1/-1;
+      text-align: center;
+      padding: 1.2rem;
+      background-color: #4d4636;
+      color: white;
+      font-weight: 400;
+      width: 80%;
+      justify-self: center;
+      align-self: end;
+      z-index: 5;
+      transform: translateY(110%); }
+    .homes .home_link {
+      grid-row: 1/2;
+      grid-column: 2;
+      z-index: 2;
+      background-color: transparent;
+      justify-self: end;
+      margin: 1rem; }
     .homes .home svg {
       fill: #deb54d;
-      height: 2rem; }
+      height: 2rem;
+      width: 2rem; }
+    .homes .home_location, .homes .home_room, .homes .home_price, .homes .home_area {
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center; }
+    .homes .home_location, .homes .home_room {
+      margin-top: 3rem;
+      border-bottom: 1px solid bisque; }
+    .homes .home_price, .homes .home_area {
+      border-bottom: 1px solid bisque; }
   .homes .cta {
-    grid-column: 1 / -1; }
+    grid-column: 1/-1;
+    background-color: #deb54d;
+    border: none;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white; }
 
 .story_pictures {
   background-color: darkseagreen;
