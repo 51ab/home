@@ -39,15 +39,17 @@
       list-style: none; }
     .footer .nav_link:link, .footer .nav_link:visited {
       text-decoration: none;
-      font-size: 1rem;
+      font-size: 1.2rem;
       color: white;
       font-family: Arial, Helvetica, sans-serif;
       text-transform: uppercase;
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 1rem;
+      padding: 1rem 0.5rem;
       display: block;
       text-align: center;
-      justify-content: center; }
+      justify-content: center;
+      transition: all .5s; }
+    .footer .nav_link:hover, .footer .nav_link:active {
+      background-color: rgba(255, 255, 255, 0.1); }
 
 .sidebar {
   background-color: cadetblue;
