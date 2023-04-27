@@ -27,8 +27,27 @@
     margin-top: -1rem; }
 
 .footer {
-  background-color: aqua;
-  grid-column: full-start / full-end; }
+  background-color: black;
+  grid-column: full-start / full-end;
+  padding: 5% 0; }
+  .footer .nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 1rem;
+    background-color: black; }
+    .footer .nav_item {
+      list-style: none; }
+    .footer .nav_link:link, .footer .nav_link:visited {
+      text-decoration: none;
+      font-size: 1rem;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      display: block;
+      text-align: center;
+      justify-content: center; }
 
 .sidebar {
   background-color: cadetblue;
@@ -46,8 +65,8 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(7, 5vw);
-  grid-gap: 2rem;
-  padding: 1.5rem; }
+  grid-gap: 1rem;
+  padding: 1rem; }
   .gallery_img {
     width: 100%;
     height: 100%;
@@ -217,9 +236,6 @@
 .realtors {
   background-color: coral;
   grid-column: col-start 7 / full-end; }
-
-* {
-  background-color: white; }
 
 html {
   font-size: 92.5%; }
