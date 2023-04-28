@@ -2,19 +2,30 @@
     background-image: linear-gradient(rgba(rgb(111, 131, 126), .83),rgba(rgb(214, 231, 227),.83)),url(https://watermark.lovepik.com/photo/50080/4983.jpg_wh1200.jpg);
     grid-column: full-start / col-end 6;
     display: grid;
+    &_logo{
+        margin-left: -5%;
+        width:25%;
+    }
+    &_logo2{
+        width:20%;
+        padding: 0%;
+    }
     .top{
-        display:block;
+        display:flex;
+        align-items: center;
+    justify-content: space-around;
         h4{
             text-align: center;
             justify-content: center;
-            margin-top: -5rem;
-            font-size: 2rem;
+           // margin-top: -5rem;
+            font-size: 2.4rem;
             color:rgb(77, 99, 98);
            // background-color: rgba(black,.3s);
             
             
         }
     }
+    
     .btn{
         text-align: center;
        background-color: inherit;
@@ -25,7 +36,7 @@
        
        // opacity: 0.8;
     cursor: pointer;
-    border-bottom: 0.5px solid black;
+    
     a{
         
         background-image: linear-gradient(rgba(rgb(183, 121, 183),.8) , rgba(rgb(38, 22, 53),.8));
@@ -33,24 +44,43 @@
     border: none;
         border-radius: 36px;
         //left: 50%;
+        text-transform: uppercase;
         right: 50%;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 530;
         color:white;
         margin: 2% 0%;
         width:20%;
-        padding: 1% 2%;
+        padding: 1.5% 2%;
         text-decoration: none;
         transition: all 2s;
         &:hover{
-            background-image: linear-gradient(rgba(rgb(96, 207, 168),.8) , rgba(rgb(9, 153, 107),1));
+            background-image: linear-gradient(rgba(rgb(57, 18, 100),.8) , rgba(rgb(22, 24, 23),1));
             box-shadow: darkviolet .4s;
         }
     }}
+    &_text{
+        display: grid;
+        font-size: 1.8rem;
+        color:rgb(56, 8, 95);
+        grid-template-columns: 1fr max-content 1fr;
+        grid-gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        &::before,
+        &::after{
+            content: "";
+            height: 1px;
+            display: block;
+            background-color: black;
+
+        }
+    }
     h3{
         color:black;
         font-size: 3rem;
         text-align: center;
-        margin: 0%;
+        margin: -4%;
       
     }
     h1{
@@ -61,7 +91,7 @@
         letter-spacing: 0.5rem;
     }
     p{
-        color:white;
+        color:rgb(43, 38, 38);
         font-size: 1.2rem;
         margin: 4rem;
         text-align: center;

@@ -57,7 +57,7 @@
     text-align: center; }
 
 .sidebar {
-  background-color: lightsalmon;
+  background-color: #210243;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
   display: flex;
@@ -88,42 +88,63 @@
   background-image: linear-gradient(rgba(111, 131, 126, 0.83), rgba(214, 231, 227, 0.83)), url(https://watermark.lovepik.com/photo/50080/4983.jpg_wh1200.jpg);
   grid-column: full-start / col-end 6;
   display: grid; }
+  .header_logo {
+    margin-left: -5%;
+    width: 25%; }
+  .header_logo2 {
+    width: 20%;
+    padding: 0%; }
   .header .top {
-    display: block; }
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
     .header .top h4 {
       text-align: center;
       justify-content: center;
-      margin-top: -5rem;
-      font-size: 2rem;
+      font-size: 2.4rem;
       color: #4d6362; }
   .header .btn {
     text-align: center;
     background-color: inherit;
     justify-content: center;
     border: none;
-    cursor: pointer;
-    border-bottom: 0.5px solid black; }
+    cursor: pointer; }
     .header .btn a {
       background-image: linear-gradient(rgba(183, 121, 183, 0.8), rgba(38, 22, 53, 0.8));
       text-align: center;
       border: none;
       border-radius: 36px;
+      text-transform: uppercase;
       right: 50%;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
+      font-weight: 530;
       color: white;
       margin: 2% 0%;
       width: 20%;
-      padding: 1% 2%;
+      padding: 1.5% 2%;
       text-decoration: none;
       transition: all 2s; }
       .header .btn a:hover {
-        background-image: linear-gradient(rgba(96, 207, 168, 0.8), #09996b);
+        background-image: linear-gradient(rgba(57, 18, 100, 0.8), #161817);
         box-shadow: darkviolet .4s; }
+  .header_text {
+    display: grid;
+    font-size: 1.8rem;
+    color: #38085f;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-gap: 1.5rem;
+    justify-content: center;
+    align-items: center; }
+    .header_text::before, .header_text::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: black; }
   .header h3 {
     color: black;
     font-size: 3rem;
     text-align: center;
-    margin: 0%; }
+    margin: -4%; }
   .header h1 {
     color: white;
     font-size: 3rem;
@@ -131,7 +152,7 @@
     font-style: italic;
     letter-spacing: 0.5rem; }
   .header p {
-    color: white;
+    color: #2b2626;
     font-size: 1.2rem;
     margin: 4rem;
     text-align: center; }
