@@ -85,8 +85,9 @@
     height: 3.2px; }
 
 .header {
-  background-color: #bbe6d8;
-  grid-column: full-start / col-end 6; }
+  background-image: linear-gradient(rgba(111, 131, 126, 0.83), rgba(214, 231, 227, 0.83)), url(https://watermark.lovepik.com/photo/50080/4983.jpg_wh1200.jpg);
+  grid-column: full-start / col-end 6;
+  display: grid; }
   .header .top {
     display: block; }
     .header .top h4 {
@@ -95,6 +96,29 @@
       margin-top: -5rem;
       font-size: 2rem;
       color: #4d6362; }
+  .header .btn {
+    text-align: center;
+    background-color: inherit;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    border-bottom: 0.5px solid black; }
+    .header .btn a {
+      background-image: linear-gradient(rgba(183, 121, 183, 0.8), rgba(38, 22, 53, 0.8));
+      text-align: center;
+      border: none;
+      border-radius: 36px;
+      right: 50%;
+      font-size: 1.5rem;
+      color: white;
+      margin: 2% 0%;
+      width: 20%;
+      padding: 1% 2%;
+      text-decoration: none;
+      transition: all 2s; }
+      .header .btn a:hover {
+        background-image: linear-gradient(rgba(96, 207, 168, 0.8), #09996b);
+        box-shadow: darkviolet .4s; }
   .header h3 {
     color: black;
     font-size: 3rem;
@@ -106,6 +130,11 @@
     text-align: center;
     font-style: italic;
     letter-spacing: 0.5rem; }
+  .header p {
+    color: white;
+    font-size: 1.2rem;
+    margin: 4rem;
+    text-align: center; }
 
 .gallery {
   background-color: bisque;
@@ -283,7 +312,7 @@
       background-color: #5c975c; }
 
 .realtors {
-  background-color: coral;
+  background-color: #160339;
   grid-column: col-start 7 / full-end; }
 
 html {
