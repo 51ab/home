@@ -1,4 +1,31 @@
 .header{
-    background-color: chocolate;
+    background-color:rgb(187, 230, 216);
     grid-column: full-start / col-end 6;
+    .top{
+        display:block;
+        h4{
+            text-align: center;
+            justify-content: center;
+            margin-top: -5rem;
+            font-size: 2rem;
+            color:rgb(77, 99, 98);
+           // background-color: rgba(black,.3s);
+            
+            
+        }
+    }
+    h3{
+        color:black;
+        font-size: 3rem;
+        text-align: center;
+        margin: 0%;
+      
+    }
+    h1{
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        font-style: italic;
+        letter-spacing: 0.5rem;
+    }
 }
