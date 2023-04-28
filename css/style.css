@@ -335,6 +335,10 @@
 .realtors {
   background-color: #160339;
   grid-column: col-start 7 / full-end; }
+  .realtors_list img {
+    width: 20%;
+    border-radius: 50%;
+    display: block; }
 
 html {
   font-size: 92.5%; }
