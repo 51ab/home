@@ -334,11 +334,29 @@
 
 .realtors {
   background-color: #160339;
-  grid-column: col-start 7 / full-end; }
-  .realtors_list img {
-    width: 20%;
-    border-radius: 50%;
-    display: block; }
+  grid-column: col-start 7 / full-end;
+  padding: 5%; }
+  .realtors h3 {
+    font-size: 3rem;
+    color: goldenrod; }
+  .realtors_list {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    color: azure;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem; }
+    .realtors_list_details {
+      align-items: center; }
+    .realtors_list img {
+      width: 7rem;
+      border-radius: 50%;
+      display: block; }
+    .realtors_list h4 {
+      font-size: 1.5rem;
+      margin: 0; }
+    .realtors_list p {
+      font-size: 1rem;
+      color: gold; }
 
 html {
   font-size: 92.5%; }
