@@ -339,14 +339,15 @@
   .realtors h3 {
     font-size: 3rem;
     color: goldenrod; }
+  .realtors div.realtors_details {
+    display: grid;
+    align-items: center; }
   .realtors_list {
     display: grid;
     grid-template-columns: min-content max-content;
     color: azure;
     grid-column-gap: 2rem;
     grid-row-gap: 2rem; }
-    .realtors_list_details {
-      align-items: center; }
     .realtors_list img {
       width: 7rem;
       border-radius: 50%;
