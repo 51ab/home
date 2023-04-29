@@ -2,8 +2,10 @@
     background-image: linear-gradient(rgba(rgb(111, 131, 126), .83),rgba(rgb(214, 231, 227),.83)),url(https://watermark.lovepik.com/photo/50080/4983.jpg_wh1200.jpg);
     grid-column: full-start / col-end 6;
     display: grid;
+    grid-template-columns: minmax(min-content,max-content);
+    grid-template-rows: 1fr min-content 6rem 1fr;
     &_logo{
-        margin-left: -5%;
+        margin-left: -3%;
         width:25%;
     }
     &_logo2{
@@ -18,7 +20,7 @@
             text-align: center;
             justify-content: center;
            // margin-top: -5rem;
-            font-size: 2.4rem;
+            font-size: 2rem;
             color:rgb(77, 99, 98);
            // background-color: rgba(black,.3s);
             
