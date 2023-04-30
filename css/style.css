@@ -30,6 +30,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 3rem; }
+  @media only screen and (max-width: 50rem) {
+    .features {
+      margin: 10rem; } }
 
 .feature {
   display: grid;
