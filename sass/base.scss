@@ -2,12 +2,17 @@ $bp-largest:75rem;
 $bp-large:62.5rem;
 $bp-medium:50rem;
 $bp-small:37.5rem;
+$bp-smallest:20rem;
 
 
-
+*{
+   // margin: 0%;
+   // padding: 0%;
+}
 
 html{
     //font-size: 62.5%;
+    box-sizing: border-box;
     @media only screen and(max-width:$bp-largest){
         font-size: 50%;
 
@@ -23,10 +28,10 @@ html{
 
 .container{
     display: grid;
-    width:110%;
+    width:fit-content;
     grid-template-rows: 80vh min-content 40vw repeat(3,min-content);
     grid-template-columns: [sidebar-start]8rem [sidebar-end full-start] minmax(6rem,1fr)
-     [center-start] repeat(8, [col-start] minmax(min-content,14rem) [col-end])[center-end] minmax(6rem,1fr) [full-end];
+     [center-start] repeat(8, [col-start] minmax(min-content,14rem) [col-end])[center-end] minmax(6rem,1fr) [full-end] 1fr;
 
 
      @media only screen and(max-width:$bp-large)
@@ -34,7 +39,7 @@ html{
     display: grid;
     grid-template-rows: 6rem 80vh min-content 40vw repeat(3,min-content);
     grid-template-columns:  [full-start] minmax(6rem,1fr)
-     [center-start] repeat(8, [col-start] minmax(min-content,14rem) [col-end])[center-end] minmax(6rem,1fr) [full-end];
+     [center-start] repeat(8, [col-start] minmax(min-content,14rem) [col-end])[center-end] minmax(6rem,1fr) [full-end] 1fr;
 
     }
     @media only screen and(max-width:$bp-medium)
@@ -42,7 +47,16 @@ html{
         display: grid;
         grid-template-rows: 6rem 100vh min-content min-content 40vw repeat(3,min-content);
         grid-template-columns:  [full-start] minmax(6rem,1fr)
-         [center-start] repeat(8, [col-start] minmax(min-content,14rem) [col-end])[center-end] minmax(6rem,1fr) [full-end];
+         [center-start] repeat(8, [col-start] minmax(min-content,14rem) [col-end])[center-end] minmax(6rem,1fr) [full-end] 1fr;
     
         }
+        @media only screen and(max-width:$bp-small)
+        {
+            display: grid;
+            grid-template-rows: 5rem 100vh min-content min-content 40vw repeat(3,min-content);
+            grid-template-columns:  [full-start] minmax(0rem,1fr)
+             [center-start] repeat(8, [col-start] minmax(min-content,5rem) [col-end])[center-end] minmax(1rem,1fr) [full-end] 1fr;
+        
+            }
+     
 }

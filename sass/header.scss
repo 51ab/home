@@ -67,6 +67,10 @@
             background-image: linear-gradient(rgba(rgb(57, 18, 100),.8) , rgba(rgb(22, 24, 23),1));
             box-shadow: darkviolet .4s;
         }
+        @media only screen and(max-width:$bp-medium){
+           font-size: 0.8rem;
+           padding: 3% 3%;
+        }
     }}
     &_text{
         display: grid;
@@ -115,7 +119,7 @@
             }
             @media only screen and(max-width:$bp-small)
             {
-              // font-size: 1.5rem;
+               font-size: 1.8rem;
             
                 }
     }

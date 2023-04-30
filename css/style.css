@@ -1,6 +1,8 @@
-@media only screen and (max-width: 75rem) {
-  html {
-    font-size: 50%; } }
+html {
+  box-sizing: border-box; }
+  @media only screen and (max-width: 75rem) {
+    html {
+      font-size: 50%; } }
 
 .h1_heading {
   font-size: 3rem;
@@ -9,19 +11,24 @@
 
 .container {
   display: grid;
-  width: 110%;
+  width: fit-content;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end] 1fr; }
   @media only screen and (max-width: 62.5rem) {
     .container {
       display: grid;
       grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
-      grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
+      grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end] 1fr; } }
   @media only screen and (max-width: 50rem) {
     .container {
       display: grid;
       grid-template-rows: 6rem 100vh min-content min-content 40vw repeat(3, min-content);
-      grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
+      grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end] 1fr; } }
+  @media only screen and (max-width: 37.5rem) {
+    .container {
+      display: grid;
+      grid-template-rows: 5rem 100vh min-content min-content 40vw repeat(3, min-content);
+      grid-template-columns: [full-start] minmax(0rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 5rem) [col-end]) [center-end] minmax(1rem, 1fr) [full-end] 1fr; } }
 
 .features {
   background-color: white;
@@ -30,6 +37,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 3rem; }
+  @media only screen and (max-width: 50rem) {
+    .features {
+      margin: 5rem 0 15rem; } }
 
 .feature {
   display: grid;
@@ -68,6 +78,9 @@
       text-align: center;
       justify-content: center;
       transition: all .5s; }
+      @media only screen and (max-width: 50rem) {
+        .footer .nav_link:link, .footer .nav_link:visited {
+          font-size: 0.8rem; } }
     .footer .nav_link:hover, .footer .nav_link:active {
       background-color: rgba(255, 228, 196, 0.2); }
   .footer .copy {
@@ -75,6 +88,9 @@
     font-size: 1.2rem;
     margin: 4rem;
     text-align: center; }
+    @media only screen and (max-width: 50rem) {
+      .footer .copy {
+        font-size: 0.8rem; } }
 
 .sidebar {
   background-color: #210243;
@@ -104,6 +120,9 @@
     content: "";
     display: block;
     margin-left: 0%; }
+    @media only screen and (max-width: 50rem) {
+      .nav-btn::before, .nav-btn::after {
+        width: 3rem; } }
   .nav-btn::before {
     transform: translateY(-1.2rem) translateX(-6px); }
   .nav-btn::after {
@@ -113,6 +132,11 @@
     .nav-btn {
       margin-top: 0rem;
       margin-right: 4rem; } }
+  @media only screen and (max-width: 50rem) {
+    .nav-btn {
+      margin-top: 0rem;
+      margin-right: 1rem;
+      width: 3rem; } }
 
 .header {
   background-image: linear-gradient(rgba(111, 131, 126, 0.83), rgba(214, 231, 227, 0.83)), url(https://watermark.lovepik.com/photo/50080/4983.jpg_wh1200.jpg);
@@ -162,6 +186,10 @@
       .header .btn a:hover {
         background-image: linear-gradient(rgba(57, 18, 100, 0.8), #161817);
         box-shadow: darkviolet .4s; }
+      @media only screen and (max-width: 50rem) {
+        .header .btn a {
+          font-size: 0.8rem;
+          padding: 3% 3%; } }
   .header_text {
     display: grid;
     font-size: 1.8rem;
@@ -195,6 +223,9 @@
     @media only screen and (max-width: 75rem) {
       .header h1 {
         font-size: 2.5rem; } }
+    @media only screen and (max-width: 37.5rem) {
+      .header h1 {
+        font-size: 1.8rem; } }
   .header p {
     color: #2b2626;
     font-size: 1.2rem;
@@ -266,6 +297,10 @@
   grid-row-gap: 7rem;
   grid-column-gap: 7rem;
   align-items: flex-start; }
+  @media only screen and (max-width: 50rem) {
+    .homes {
+      grid-row-gap: 1rem;
+      margin-top: 5rem; } }
   .homes .home {
     background-color: #faf6f2;
     display: grid;
@@ -330,7 +365,8 @@
   @media only screen and (max-width: 50rem) {
     .story_pictures {
       grid-column: 1/-1;
-      padding: 5%; } }
+      padding: 5%;
+      margin-top: 20%; } }
   .story_pictures .story_img_1 {
     width: 100%;
     grid-column: 2 / 6;

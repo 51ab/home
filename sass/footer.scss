@@ -25,6 +25,11 @@
         text-align: center;
         justify-content: center;
         transition: all .5s;
+        @media only screen and(max-width:$bp-medium)
+        {
+           font-size: 0.8rem;
+        
+            }
     }
     &_link:hover,&_link:active{
         background-color: rgba(bisque , .2);
@@ -35,4 +40,9 @@
     font-size: 1.2rem;
     margin: 4rem;
     text-align: center;
+    @media only screen and(max-width:$bp-medium)
+    {
+       font-size: 0.8rem;
+    
+        }
 }}
