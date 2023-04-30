@@ -1,15 +1,19 @@
 .features{
     background-color: white;
     grid-column: center-start / center-end;
-    margin: 15rem 0;
+    margin: 10rem 0;
     display: grid;
     //grid-template-columns: repeat(3,1fr);
     grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
     grid-gap: 3rem;
     @media only screen and(max-width:$bp-medium){
-     margin: 5rem 0 15rem;
+     margin: 5rem 0 5rem;
 
     }
+    @media only screen and(max-width:$bp-small){
+        margin: 5rem 0 12rem;
+   
+       }
 }
 .feature{
     display: grid;

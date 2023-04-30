@@ -33,13 +33,16 @@ html {
 .features {
   background-color: white;
   grid-column: center-start / center-end;
-  margin: 15rem 0;
+  margin: 10rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 3rem; }
   @media only screen and (max-width: 50rem) {
     .features {
-      margin: 5rem 0 15rem; } }
+      margin: 5rem 0 5rem; } }
+  @media only screen and (max-width: 37.5rem) {
+    .features {
+      margin: 5rem 0 12rem; } }
 
 .feature {
   display: grid;
@@ -180,7 +183,7 @@ html {
       color: white;
       margin: 2% 0%;
       width: 20%;
-      padding: 2.5% 2%;
+      padding: 1.5% 2%;
       text-decoration: none;
       transition: all 2s; }
       .header .btn a:hover {
@@ -366,7 +369,10 @@ html {
     .story_pictures {
       grid-column: 1/-1;
       padding: 5%;
-      margin-top: 20%; } }
+      margin-top: 15%; } }
+  @media only screen and (max-width: 37.5rem) {
+    .story_pictures {
+      margin-top: 25%; } }
   .story_pictures .story_img_1 {
     width: 100%;
     grid-column: 2 / 6;
@@ -415,7 +421,7 @@ html {
         text-align: center;
         align-items: center; } }
   .story_content h2 {
-    font-size: 3.8rem;
+    font-size: 3.2rem;
     font-style: italic;
     background-color: inherit; }
     @media only screen and (max-width: 62.5rem) {
@@ -423,7 +429,7 @@ html {
         font-size: 2.5rem; } }
     @media only screen and (max-width: 50rem) {
       .story_content h2 {
-        font-size: 3rem; } }
+        font-size: 2rem; } }
   .story_content p {
     background-color: inherit;
     font-size: 1.2rem;
@@ -440,7 +446,7 @@ html {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5rem;
     text-transform: uppercase;
-    padding: 1.8rem 3rem;
+    padding: 1.4rem 2rem;
     cursor: pointer;
     transition: all .5s; }
     @media only screen and (max-width: 62.5rem) {
@@ -452,7 +458,7 @@ html {
       .story_content .btn {
         padding: 1.2rem 1.2rem;
         font-size: 1.2rem;
-        margin-bottom: 25%; } }
+        margin-bottom: 10%; } }
     @media only screen and (max-width: 37.5rem) {
       .story_content .btn {
         margin-bottom: 35%; } }
