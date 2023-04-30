@@ -142,7 +142,7 @@ html {
       width: 3rem; } }
 
 .header {
-  background-image: linear-gradient(rgba(111, 131, 126, 0.83), rgba(214, 231, 227, 0.83)), url(https://watermark.lovepik.com/photo/50080/4983.jpg_wh1200.jpg);
+  background-image: linear-gradient(rgba(111, 131, 126, 0.83), rgba(214, 231, 227, 0.83)), url("/img/head_background.jpg");
   grid-column: full-start / col-end 6;
   display: grid;
   grid-template-columns: minmax(min-content, max-content);
