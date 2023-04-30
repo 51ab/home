@@ -5,7 +5,6 @@
 .h1_heading {
   font-size: 3rem;
   color: black;
-  width: 100vw;
   text-align: center; }
 
 .container {
@@ -30,9 +29,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 3rem; }
-  @media only screen and (max-width: 50rem) {
-    .features {
-      margin: 10rem; } }
 
 .feature {
   display: grid;
@@ -159,7 +155,7 @@
       color: white;
       margin: 2% 0%;
       width: 20%;
-      padding: 1.5% 2%;
+      padding: 2.5% 2%;
       text-decoration: none;
       transition: all 2s; }
       .header .btn a:hover {
@@ -183,12 +179,21 @@
     font-size: 3rem;
     text-align: center;
     margin: -4%; }
+    @media only screen and (max-width: 75rem) {
+      .header h3 {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 37.5rem) {
+      .header h3 {
+        font-size: 1.5rem; } }
   .header h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     font-style: italic;
     letter-spacing: 0.5rem; }
+    @media only screen and (max-width: 75rem) {
+      .header h1 {
+        font-size: 2.5rem; } }
   .header p {
     color: #2b2626;
     font-size: 1.2rem;
@@ -452,6 +457,9 @@
     @media only screen and (max-width: 50rem) {
       .realtors_list {
         grid-template-columns: repeat(3, min-content max-content); } }
+    @media only screen and (max-width: 37.5rem) {
+      .realtors_list {
+        grid-template-columns: min-content max-content; } }
     .realtors_list img {
       width: 7rem;
       border-radius: 50%;

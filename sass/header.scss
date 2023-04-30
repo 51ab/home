@@ -60,7 +60,7 @@
         color:white;
         margin: 2% 0%;
         width:20%;
-        padding: 1.5% 2%;
+        padding: 2.5% 2%;
         text-decoration: none;
         transition: all 2s;
         &:hover{
@@ -90,14 +90,34 @@
         font-size: 3rem;
         text-align: center;
         margin: -4%;
+        @media only screen and(max-width:$bp-largest)
+    {
+       font-size: 2rem;
+    
+        }
+        @media only screen and(max-width:$bp-small)
+        {
+           font-size: 1.5rem;
+        
+            }
       
     }
     h1{
         color: white;
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-align: center;
         font-style: italic;
         letter-spacing: 0.5rem;
+        @media only screen and(max-width:$bp-largest)
+        {
+           font-size: 2.5rem;
+        
+            }
+            @media only screen and(max-width:$bp-small)
+            {
+              // font-size: 1.5rem;
+            
+                }
     }
     p{
         color:rgb(43, 38, 38);
