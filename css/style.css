@@ -9,6 +9,7 @@
 
 .container {
   display: grid;
+  width: 110%;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   @media only screen and (max-width: 62.5rem) {
@@ -415,7 +416,10 @@
       .story_content .btn {
         padding: 1.2rem 1.2rem;
         font-size: 1.2rem;
-        width: 32%; } }
+        margin-bottom: 25%; } }
+    @media only screen and (max-width: 37.5rem) {
+      .story_content .btn {
+        margin-bottom: 35%; } }
     .story_content .btn:hover {
       background-color: #5c975c; }
 
