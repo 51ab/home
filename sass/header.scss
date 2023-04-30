@@ -4,6 +4,13 @@
     display: grid;
     grid-template-columns: minmax(min-content,max-content);
     grid-template-rows: 1fr min-content 6rem 1fr;
+    
+    @media only screen and(max-width:$bp-medium)
+    {
+       grid-column: full-start/full-end;
+    
+        }
+
     &_logo{
         margin-left: -3%;
         width:25%;
