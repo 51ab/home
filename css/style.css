@@ -48,13 +48,21 @@ html {
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-column-gap: 1rem; }
+  .feature:hover {
+    background-color: #ece5e5; }
+    .feature:hover_icon {
+      width: 4rem;
+      fill: #e4b337; }
   .feature h4 {
     font-weight: 600;
     font-size: 1.5rem; }
   .feature_icon {
-    width: 4rem;
+    width: 3.8rem;
     fill: #eab940;
     grid-row: 1 / span 2; }
+    .feature_icon:hover {
+      width: 4rem;
+      fill: #e4b337; }
   .feature p {
     font-size: 1.2rem;
     margin-top: -1rem; }
@@ -328,14 +336,27 @@ html {
       justify-self: center;
       align-self: end;
       z-index: 5;
-      transform: translateY(110%); }
+      transform: translateY(110%);
+      transition: all ease-in-out .5s; }
+      .homes .home h5:hover {
+        background-color: black;
+        transform: translateY(0.5rem); }
     .homes .home_link {
       grid-row: 1/2;
       grid-column: 2;
       z-index: 2;
       background-color: transparent;
       justify-self: end;
-      margin: 1rem; }
+      margin: 1rem;
+      transition: all 0.5s; }
+      .homes .home_link:active {
+        fill: crimson; }
+      .homes .home_link:visited {
+        fill: crimson; }
+      .homes .home_link:focus {
+        fill: crimson; }
+      .homes .home_link:hover {
+        fill: crimson; }
     .homes .home svg {
       fill: #deb54d;
       height: 2rem;
@@ -358,6 +379,11 @@ html {
     font-weight: 700;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white; }
+    .homes .cta:hover {
+      background-color: #d8a217;
+      cursor: pointer; }
+  .homes div.home_room svg:hover, .homes div.home_room svg:target, .homes div.home_location svg:hover, .homes div.home_location svg:target, .homes div.home_area svg:hover, .homes div.home_area svg:target, .homes div.home_price svg:hover, .homes div.home_price svg:target {
+    fill: #deb54d; }
 
 .story_pictures {
   background-color: darkseagreen;

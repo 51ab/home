@@ -13,6 +13,7 @@
         grid-row-gap: 1rem;
         margin-top: 5rem;
         }
+        
     .home{
         background-color: rgb(250, 246, 242);
         display: grid;
@@ -43,6 +44,11 @@
             align-self: end;
             z-index: 5;
             transform: translateY(110%);
+            transition: all ease-in-out .5s;
+            &:hover{
+                background-color: black;
+                transform: translateY(0.5rem);
+            }
            
         }
         &_link{
@@ -53,12 +59,28 @@
             justify-self: end;
             margin: 1rem;
             
+           transition: all 0.5s;
+            &:active{
+                fill:crimson;
+            }
+            &:visited
+            {
+                fill: crimson;
+            }
+            &:focus{
+                fill:crimson;
+            }
+            &:hover{
+                fill:crimson;
+            }
+            
 
         }
         svg{
             fill:rgb(222, 181, 77);
             height: 2rem;
             width: 2rem;
+           
            
 
 
@@ -89,5 +111,16 @@
         font-weight: 700;
         font-family: Georgia, 'Times New Roman', Times, serif;
         color:white;
+        &:hover{
+            background-color:rgb(216, 162, 23);
+            cursor: pointer;
+        }
     }
-}
+
+    div.home_room,div.home_location,div.home_area,div.home_price{
+        svg{
+            &:hover,&:target{
+                fill:rgb(222, 181, 77);
+            }  
+        }
+    }}
