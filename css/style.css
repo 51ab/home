@@ -28,7 +28,7 @@ html {
     .container {
       display: grid;
       grid-template-rows: 5rem 100vh min-content min-content 40vw repeat(3, min-content);
-      grid-template-columns: [full-start] minmax(0rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 5rem) [col-end]) [center-end] minmax(1rem, 1fr) [full-end] 1fr; } }
+      grid-template-columns: [full-start] minmax(0rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 5rem) [col-end]) [center-end] minmax(0rem, 1fr) [full-end] 1fr; } }
 
 .features {
   background-color: white;
